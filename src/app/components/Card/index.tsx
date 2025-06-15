@@ -30,10 +30,7 @@ export default function Card({name, image, price, modification, run, year}:CardP
             height={100} 
             src={image} 
             quality={100}
-            alt='Image car'
-            priority 
-            placeholder="blur" 
-            blurDataURL="/icons/waiting.svg"/>
+            alt='Image car'/>
             <div className={styles.container__info}>
                 <p className={styles.container__info__header}>
                     <strong>
