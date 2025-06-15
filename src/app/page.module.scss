@@ -52,6 +52,7 @@
   width: 100%;
 
   flex: 1;
+  scrollbar-gutter: stable;
 }
 
 .table::-webkit-scrollbar {
