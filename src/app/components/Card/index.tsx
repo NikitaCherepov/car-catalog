@@ -33,7 +33,8 @@ export default function Card({name, image, price, modification, run, year}:CardP
             alt='Image car'
             priority 
             placeholder="blur"
-            blurDataURL="/icons/waiting.svg"/>
+            blurDataURL="/icons/waiting.svg"
+            unoptimized/>
             <div className={styles.container__info}>
                 <p className={styles.container__info__header}>
                     <strong>
