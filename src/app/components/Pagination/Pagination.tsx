@@ -1,4 +1,4 @@
-import styles from './Pagination.module.scss'
+import styles from './Pagination.module.scss';
 import { useState, useEffect } from 'react';
 import { JSX } from 'react';
 
@@ -39,14 +39,19 @@ export default function Pagination({ page, setPage, lastPage, className }: Pagin
         acc.push(
           <span className={styles.dots} key={`dots-${idx}`}>
             ...
-          </span>
+          </span>,
         );
       }
 
       acc.push(
-        <button key={p} className={`${styles.page} button ${p === page ? styles.page__chosen : ''}`} onClick={() => handleClick(p)} disabled={p === page}>
+        <button
+          key={p}
+          className={`${styles.page} button ${p === page ? styles.page__chosen : ''}`}
+          onClick={() => handleClick(p)}
+          disabled={p === page}
+        >
           {p}
-        </button>
+        </button>,
       );
 
       return acc;
