@@ -26,8 +26,8 @@ export default function Card({name, image, price, modification, run, year}:CardP
         className={styles.container}>
             <Image 
             className={styles.container__image} 
-            width={285} 
-            height={215}
+            width={200} 
+            height={150}
             src={image} 
             quality={100}
             alt='Image car'
